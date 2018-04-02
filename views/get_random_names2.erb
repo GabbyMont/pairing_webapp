@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<center>
+</center>
+
+
+<script>
+	function new_textbox(){
+		var input = document.createElement("input"); // Creates an input box or tag (input field) // document is essentially the webpage
+		var location = document.getElementById("our_input"); // Finding housing tag from below paragraph tag <p id="our_input">
+		input.type = "text"; // Like "text" in input tags below
+		input.required = true; //
+		input.autofocus = true;
+		input.name = "new_name[]";
+		location.appendChild(input); // Adds input to location //
+	}
+
+
+	function remove_box() {
+		var location = document.getElementById("our_input"); //
+		location.removeChild(location.lastChild);
+
+	}
+</script>
+
+<button "button" onclick="new_textbox()">Add name</button>
+<button onclick="remove_box()">Delete last textbox</button>
+
+<h4>Please enter six names below: </h4>
+<p id="our_input"></p> <!--our_input is a location on the webpage-->
+<form method="post" action="getrandomnames"><h5>
+	First Name: <input type="text" name="name1" autofocus><br>
+	Second Name: <input type="text" name="name2"><br>
+	Thrid Name: <input type="text" name="name3"><br>
+	Fourth Name: <input type="text" name="name4"><br>
+	Fifth Name: <input type="text" name="name5"><br>
+	Sixth Name: <input type="text" name="name6"></h5>
+	<input type="hidden" name="username" value="<%=username%>">
+	<input type="submit" value="Enter">
+</form></center>
+</body>
+</html>
