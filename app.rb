@@ -75,6 +75,6 @@ get '/final_result' do
 end 
 
 post '/start_over_button' do
-	redirect '/getrandomnames'
+	redirect '/'
 end
 
