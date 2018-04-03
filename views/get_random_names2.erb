@@ -6,7 +6,7 @@
 <body>
 <center>
 </center>
-
+<h4>Please add some names below: </h4>
 
 <script>
 	function new_textbox(){
@@ -27,19 +27,20 @@
 	}
 </script>
 
-<button "button" onclick="new_textbox()">Add name</button>
+<button onclick="new_textbox()">Add name</button>
 <button onclick="remove_box()">Delete last textbox</button>
 
-<h4>Please enter six names below: </h4>
-<p id="our_input"></p> <!--our_input is a location on the webpage-->
 <form method="post" action="getrandomnames"><h5>
-	First Name: <input type="text" name="name1" autofocus><br>
+	<p id="our_input"></p> <!--our_input is a location on the webpage-->
+
+	<!--First Name: <input type="text" name="name1" autofocus><br>
 	Second Name: <input type="text" name="name2"><br>
 	Thrid Name: <input type="text" name="name3"><br>
 	Fourth Name: <input type="text" name="name4"><br>
 	Fifth Name: <input type="text" name="name5"><br>
-	Sixth Name: <input type="text" name="name6"></h5>
+	Sixth Name: <input type="text" name="name6"></h5> -->
 	<input type="hidden" name="username" value="<%=username%>">
+	<br><h4>Click the "Enter" button to proceed:</h4>
 	<input type="submit" value="Enter">
 </form></center>
 </body>

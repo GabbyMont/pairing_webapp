@@ -7,7 +7,7 @@
 
 <center><form method="post" action="check_names">
 	<input type="hidden" name="username" value='<%=username%>'>
-	<% session[:name_array].each do |pairs| %>
+	<% pairs_array.each do |pairs| %>
 		<input type="checkbox" name="teams[]" value='<%=pairs.join(',')%>'>
 		<%=pairs.join(',')%><br>
 	<%end%>

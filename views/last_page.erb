@@ -4,7 +4,7 @@
 	<title></title>
 </head>
 <body>
-<center><h3>Here are your teams <%=username%>:</h3>
+<center><h3>Here are your teams, <%=username%>:</h3>
 <input type="hidden" name="username" value="<%=username%>">
 	<% session[:liked_pairs].each do |final| %>
 		<%=final.join(',')%><strong>;</strong><br>
